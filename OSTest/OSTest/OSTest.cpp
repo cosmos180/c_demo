@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include<iostream>
+#include "func_declare.h"
 using namespace std;
 
 class A
@@ -56,20 +57,14 @@ int partition(int *data, int length, int start, int end)
 
 void main()
 {
-	cout<<sizeof(_TCHAR)<<endl;
+	//cout<<sizeof(_TCHAR)<<endl;
 
     //int data[8] = {10, 17, 20, 31, 6, 9, 18, 67};
-    int data[8] = {10, 17, 20, 31, 32, 98, 54, 67};
-    //swap(data, 3, 7);
-    partition(data, 8, 0, 7);
-    data;
-	/*struct protoent *protocol;
-	for(number=0; number<5; number++)
-	{
-		protocol = getprotobynumber(number);
-		if(protocol == (struct protoent * ) NULL) continue;
-		printf("%2d: %-10s: %-10s\n", protocol->p_proto, protocol->p_name, protocol->p_aliases[0]);
-	}*/
-	
+    //int data[8] = {10, 17, 20, 31, 32, 98, 54, 67};
+    //partition(data, 8, 0, 7);
+
+    //comparePerformancezWithBit();
+
+    printToMaxOfDigits(3);
 }
 
