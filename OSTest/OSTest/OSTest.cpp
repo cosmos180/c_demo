@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include<iostream>
+#include <locale.h>
 #include "func_declare.h"
 using namespace std;
 
@@ -65,6 +66,16 @@ void main()
 
     //comparePerformancezWithBit();
 
-    printToMaxOfDigits(3);
+    //printToMaxOfDigits(3);
+    //char p[4] = {0};
+    //memcpy_s(p, _TRUNCATE, "abc", 4);
+
+    //permutation(p);
+
+    
+    setlocale(LC_CTYPE, "");
+    printfVariousData(L"sdccds%%, string=%s, int=%d, char=%c\n", L"中国人民共和国", 211, L'k');
+    printfVariousData(L"sdccds%%, string=%s, int=%d, char=%c\n", L"hello world", 211, L'k');
+    //printfVariousData(L"sdccds%%, string=%s, int=%d, char=%c\n", L"你好", 211, L'k');
 }
 
